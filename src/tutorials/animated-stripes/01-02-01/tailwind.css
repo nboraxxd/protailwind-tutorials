@@ -3,7 +3,10 @@
 @tailwind utilities;
 
 @layer components {
-  .stripes {
+  .stripes-practice {
     /* Do your thing! */
+    /* background-image: repeating-linear-gradient(-45deg, transparent 0px, transparent 12px, black 12px, black 15px); */
+    background-image: linear-gradient(-45deg, black 5%, transparent 5% 45%, black 45% 55%, transparent 55% 95%, black 95%);
+    background-size: 20px 20px;
   }
 }
