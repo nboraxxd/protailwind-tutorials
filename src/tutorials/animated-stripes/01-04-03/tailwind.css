@@ -14,13 +14,13 @@
 }
 
 @layer components {
-  .stripes {
+  .stripes-practice {
     position: relative;
     overflow: hidden;
     isolation: isolate;
   }
 
-  .stripes:before {
+  .stripes-practice:before {
     position: absolute;
     z-index: -1;
     top: 0;
