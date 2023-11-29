@@ -5,33 +5,33 @@
 @tailwind utilities;
 
 @layer base {
-  @keyframes slide {
+  /* @keyframes slide {
     from {
       transform: translateX(0);
     }
     to {
       transform: translateX(20px);
     }
-  }
+  } */
 
   /* Setting default stripe options */
-  :root {
+  /* :root {
     --stripes-color: black;
     --stripes-angle: -45deg;
-  }
+  } */
 }
 
 @layer components {
-  .stripes {
+  /* .stripes-practice {
     position: relative;
     overflow: hidden;
   }
 
-  .stripes > * {
+  .stripes-practice > * {
     isolation: isolate;
   }
 
-  .stripes:before {
+  .stripes-practice:before {
     position: absolute;
     top: 0;
     right: 0;
@@ -48,14 +48,14 @@
     );
     background-size: 20px 20px;
     animation: slide 1s infinite linear;
-  }
+  } */
 }
 
 @layer utilities {
-  .stripes-white {
+  /* .stripes-practice-white {
     --stripes-color: white;
   }
-  .stripes-reverse {
+  .stripes-practice-reverse {
     --stripes-angle: 45deg;
-  }
+  } */
 }
