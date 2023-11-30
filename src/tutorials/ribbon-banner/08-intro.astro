@@ -1,15 +1,17 @@
 <div class="min-h-screen bg-blue-800 p-8">
-  <div class="relative mx-auto bg-white rounded-xl shadow-xl h-56 w-80">
-    <div class="w-36 aspect-square absolute -top-2 -right-2">
+  <div class="relative mx-auto h-56 w-80 rounded-xl bg-white shadow-xl">
+    <div class="absolute -top-2 -right-2 aspect-square w-36 overflow-hidden rounded-tl-sm rounded-br-sm">
       <!-- 
         Create a "wrap-around" effect by...
         1. Cropping the ribbon to the container area
         2. Adding darker elements "behind" the corners
         3. Rounding the ribbon corners
-       -->
+      -->
+      <div class="absolute top-0 left-0 aspect-square w-2 bg-amber-500"></div>
+      <div class="absolute bottom-0 right-0 aspect-square w-2 bg-amber-500"></div>
       <a
         href="#"
-        class="py-1.5 bg-amber-300 text-amber-800 font-semibold uppercase text-xs tracking-wider block w-square-diagonal text-center absolute bottom-0 right-0 rotate-45 origin-bottom-right shadow-sm"
+        class="absolute bottom-0 right-0 block w-square-diagonal origin-bottom-right rotate-45 bg-amber-300 py-1.5 text-center text-xs font-semibold uppercase tracking-wider text-amber-800 shadow-sm transition-all hover:bg-yellow-300"
       >
         My cool ribbon
       </a>
