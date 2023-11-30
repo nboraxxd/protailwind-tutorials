@@ -2,7 +2,11 @@
 module.exports = {
   content: ['./src/**/*.{astro,md,mdx,ts,tsx}'],
   theme: {
-    extend: {},
+    extend: {
+      width: {
+        'square-diagonal': `${(Math.sqrt(2) * 100).toFixed(2)}%`,
+      },
+    },
   },
   plugins: [
     require('@tailwindcss/container-queries'),
